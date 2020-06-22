@@ -11,6 +11,11 @@
         <link rel="stylesheet" href="main.css" />
     </head>
     <body>
+        <!--For Basic Calculator-->
+        <div class="title">
+            <h2 class="name">Basic Calculator</h2>
+            <hr class="divider">
+        </div>
         <!--calculator container-->
         <div id="basicContainer">
             <!--Need a way to view calcualtion results & inputs-->
@@ -57,6 +62,38 @@
                     </tr>
                 </table>
             </div>
+        </div>
+        <!--For BMI Calculator-->
+        <div class="title">
+            <h2 class="name">BMI Calculator</h2>
+            <hr class="divider">
+        </div>
+        <div class=bmiCalculator>
+            <p class="direction1">Select Unit of Measurement:</p>
+            <!--US or Metric?-->
+            <!--US-->
+            <div class="measurement">
+                <input type="radio" id="US" name="units" value="US" onclick="hideMetric()" checked>
+                <label class="bmiLabel" for="US">U.S. Standard</label>
+            </div>
+           <!--Metric-->
+            <div class="measurement">
+                <input type="radio" id="metirc" name="units" value="International Metric" onclick="hideUS()">
+                <label class="bmiLabel" for="metric">International Metric</label>
+            </div>
+            <!--Forms-->
+            <div id="USForm">
+                <form class="bmiForm">
+                    <label class="weightLabel">Weight in pounds: </label>
+                    <input class="weight" placeholder="lbs" ></input>
+                </form>
+            </div>
+            <div id="metricForm">
+                <form class="bmiForm">
+                    <label class="weightLabel">Weight: </label>
+                    <input class="weight">Kilograms</input>
+                </form>
+            </div>            
         </div>
         <script src="main.js"></script>
     </body>

@@ -6,11 +6,14 @@
 body {
     background-image: url(./img/calBackground.jpg); 
     background-size: cover; 
+    background-position: fixed;
 }
+
+/* For Basic Calculator */
 
 .calContainer{
     width: 241px;
-    height: 330px;
+    /* height: 330px; */
     margin: auto;
     margin-top: 50px; 
 }
@@ -135,5 +138,76 @@ body {
 
 .equals:active {
     opacity: 35%; 
+}
+
+/* For BMI Calculator */
+
+.bmiCalculator {
+    border: solid 1px black;
+    width: 550px; 
+    height: 300px; 
+    margin: auto;
+    text-align: center;
+}
+
+#US:active {
+    font-style: italic; 
+}
+
+#metricForm {
+    visibility: hidden;
+    position: relative; 
+    bottom: 19px; 
+}
+
+.bmiLabel {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white; 
+    font-size: 20px;     
+}
+
+.measurement {
+    display: inline-block;
+    justify-content: space-evenly;
+    padding-right: 40px; 
+    padding-bottom: 10px;  
+}
+
+.direction1 {
+    color: white;
+    font-weight: bold;
+    font-size: 18px; 
+    padding-bottom: 10px; 
+}
+
+.weightLabel {
+    color: white; 
+    font-weight: bold; 
+    font-size: 25px; 
+}
+.weight {
+    width: 75px; 
+    height: 30px; 
+    font-size: 20px; 
+}
+
+/*Global*/
+.title {
+    width: 75%;
+    margin: auto;
+}
+
+.name { 
+    position: relative; 
+    top: 75px; 
+    color: white; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bolder; 
+    font-style: italic; 
+}
+
+.divider { 
+    margin-top: 75px; 
 }
 
