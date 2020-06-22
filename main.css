@@ -31,8 +31,6 @@ body {
     outline: none; 
 }
 
-
-
 .button {
     width: 50px; 
     height: 50px; 
@@ -46,19 +44,40 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px; 
     cursor: pointer;
+    opacity: 75%; 
 }
 
 .button:hover {
-    background-color: lightgrey;
+    background-color: white;
     border-left: solid 1px blue; 
     border-bottom: solid 1px blue;
+    opacity: 100%; 
 }
 
 .button:active{
     background-color: white; 
 }
 
+.blank {
+    width: 50px; 
+    height: 25px; 
+    margin-bottom: 10px; 
+    opacity: 40%; 
+    background-color: purple; 
+    border: none;
+}
 
+.blank:hover {
+    opacity: 40%; 
+    background-color: purple;
+    border: none;
+    cursor: default;
+}
+
+.topRow {
+    height: 25px; 
+    border-radius: 5px;
+}
 
 .ce {
     background-color: orangered;
@@ -66,22 +85,50 @@ body {
 
 .ce:hover{
     background-color: orange;
+    opacity: 100%; 
 }
 
 .ce:active {
     background-color: white;
 }
 
-.add {
-    width: 50px; 
-    height: 120px; 
-    background-color: lightskyblue;
+.del {
+    background-color: orangered;
 }
 
-.add:hover {
-    background-color: lightgray;
+.del:hover{
+    background-color: orange;
+    opacity: 100%; 
 }
 
-.add:active {
+.del:active {
     background-color: white;
+}
+
+.logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic; 
+    color: white; 
+    text-decoration: underline;
+    position: relative;
+    margin-bottom: 10px; 
+}
+
+.oh {
+    font-weight: bolder;
+    color: orangered;
+}
+
+.zero {
+    width: 110px;
+}
+
+.equals {
+    background-color: lightblue; 
+}
+
+.equals:hover {
+    background-color: white;
+    opacity: 100%;
 }
