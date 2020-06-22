@@ -55,7 +55,7 @@ body {
 }
 
 .button:active{
-    background-color: white; 
+    opacity: 35%;  
 }
 
 .blank {
@@ -132,3 +132,8 @@ body {
     background-color: white;
     opacity: 100%;
 }
+
+.equals:active {
+    opacity: 35%; 
+}
+
