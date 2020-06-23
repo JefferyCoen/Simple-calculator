@@ -69,6 +69,7 @@
             <hr class="divider">
         </div>
         <div class=bmiCalculator>
+            <h1 class="heading">Calculate Your BMI</h1>
             <p class="direction1">Select Unit of Measurement:</p>
             <!--US or Metric?-->
             <!--US-->
@@ -84,14 +85,18 @@
             <!--Forms-->
             <div id="USForm">
                 <form class="bmiForm">
-                    <label class="weightLabel">Weight in pounds: </label>
-                    <input class="weight" placeholder="lbs" ></input>
+                    <label class="weightLabel usLabel">Weight in pounds: </label>
+                    <input class="weight usInput" placeholder="lbs" ></input>
+                    <br /> 
+                    <label class="height">Height:</label>
+                    <input class="feet" placeholder="ft'"></input>
+                    <input class="inches" placeholder='in"'></input>
                 </form>
             </div>
             <div id="metricForm">
                 <form class="bmiForm">
-                    <label class="weightLabel">Weight: </label>
-                    <input class="weight">Kilograms</input>
+                    <label class="weightLabel metricLabel">Weight in kilograms: </label>
+                    <input class="weight metricInput" placeholder="kg"></input>
                 </form>
             </div>            
         </div>
