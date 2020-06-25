@@ -42,24 +42,35 @@ function calMetric() {
     // calculate BMI 
     var bmiMetric = mValue1/mValue2/mValue2*10000;
     //round number to 1 decimal place
-    var bmiRounded =bmiMetric.toFixed(1);
+    var bmiRounded = bmiMetric.toFixed(0);
 
-    document.getElementById('yourBMI').innerHTML = "Your BMI Is: " + bmiRounded; 
+    document.getElementById('yourBMI').innerHTML = "Your BMI: " + bmiRounded; 
 
     //For converting to U.S. Measurements
     //weight
-    var con1 = (mValue1 * 2.2).toFixed(3)
+    var con1 = (mValue1 * 2.2).toFixed(3);
     //round number to 1 decimal
-    var conRounded = (mValue1 * 2.2).toFixed(1)
-    //height
-    var con2 = (mValue2 / 2.54).toFixed(0)
+    var con1Rounded = (mValue1 * 2.2).toFixed(1);
+    //height convert to inches
+    var con2 = (mValue2 / 2.54).toFixed(0);
+    var con3 = (mValue2 /2.54).toFixed(2)
+    //height convert to feet and inchecs
+    let feet = Math.floor(con2 / 12)
+    let inches = (con2 - (feet * 12))
+
+    document.getElementById('conversion1').innerHTML ='Your Converted Weight in U.S. Standard is: ' + con1Rounded + " lbs";
+
+    document.getElementById('conversion2').innerHTML = 'Your Converted Hieght in U.S. Standard inches is: ' + con2 + " inches " + "or " + feet + "' (Feet) " + inches + '" (Inches)';
+
+    if(isNaN(bmiRounded))
+    {
+        document.getElementById('yourBMI').innerHTML = "We need your measurements to calculate your BMI"
+    }
 
     //additional information
     console.log('Your Actual BMI: ' + bmiMetric)
     console.log('Your BMI Rounded to Nearest First Decimal: ' + bmiRounded)
     console.log('Your Converted Weight in lbs: ' + con1)
-    console.log('Your Converted Hieght in Inches: ' + con2)
-
-    document.getElementById('conversions').innerHTML ='Your Converted Weight in U.S. Standard is: ' + conRounded;
-
+    console.log('Your Converted Hieght in Inches: ' + con3)
+    console.log('Your Converted Hieght Converted from inches: ' + feet + "'" + inches + '"')
 }
