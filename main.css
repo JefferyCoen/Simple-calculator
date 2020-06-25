@@ -141,7 +141,6 @@ body {
 }
 
 /* For BMI Calculator */
-
 .bmiCalculator {
     border: solid 1px black;
     width: 550px; 
@@ -156,15 +155,14 @@ body {
     color: white; 
     padding-bottom: 10px; 
 }
-#US:active {
-    font-style: italic; 
+
+.direction1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    font-size: 14px; 
+    padding-bottom: 10px; 
 }
 
-#metricForm {
-    visibility: hidden;
-    position: relative; 
-    bottom: 19px; 
-}
 
 .bmiLabel {
     font-family: Arial, Helvetica, sans-serif;
@@ -178,13 +176,6 @@ body {
     justify-content: space-evenly;
     padding-right: 40px; 
     padding-bottom: 10px;  
-}
-
-.direction1 {
-    font-family: 'Times New Roman', Times, serif;
-    color: whitesmoke;
-    font-size: 14px; 
-    padding-bottom: 10px; 
 }
 
 .weightLabel {
@@ -213,17 +204,7 @@ body {
     top: 11px; 
 }
 
-.metricLabel {
-    position: relative; 
-    bottom: 30px; 
-}
-
-.metricInput {
-    position: relative; 
-    bottom: 30px; 
-}
-
-.height {
+.usheight {
     color: white; 
     font-weight: bold; 
     font-size: 25px; 
@@ -255,6 +236,41 @@ body {
     top: 30px; 
 }
 
+#metricForm {
+    visibility: hidden;
+    position: relative; 
+    bottom: 19px; 
+}
+
+.metricLabel {
+    position: relative; 
+    bottom: 30px; 
+}
+
+.metricInput {
+    position: relative; 
+    bottom: 30px; 
+}
+
+.metricHeight {
+    color: white; 
+    font-weight: bold; 
+    font-size: 25px; 
+    position: relative; 
+    top: -10px;
+}
+
+.cm {
+    width: 85px; 
+    height: 30px; 
+    font-size: 20px;  
+    padding-left: 5px;
+    outline: none; 
+    border-radius: 5px; 
+    border-bottom: solid 1px blue;
+    position: relative; 
+    top: -10px;
+}
 
 
 /*Global*/
