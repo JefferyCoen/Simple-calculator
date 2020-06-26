@@ -64,12 +64,15 @@
                     </table>
                 </div>
             </div>
+            
+            <!------------------------------>
             <!--For BMI Calculator-->
             <div class="title">
                 <h2 class="name">BMI Calculator</h2>
                 <hr class="divider">
             </div>
             <div class=bmiCalculator>
+                <h5 class="logo">K<span class="oh">()</span>NAN CODE</h5>
                 <h1 class="heading">Calculate Your BMI</h1>
                 <p class="direction1">Select Unit of Measurement:</p>
                 <!--US-->
@@ -84,28 +87,38 @@
                 </div>
                 <!--Forms-->
                 <div id="USForm">
-                    <form class="bmiForm">
+                    <p class="direction1 direction2">Enter Measurements: </p>
+                    <form class="usBMIForm">
                         <label class="weightLabel usLabel">Weight in pounds: </label>
-                        <input class="weight usInput" placeholder="lbs" ></input>
+                        <input class="weight lbs" id="lbs" placeholder="lbs" ></input>
                         <br /> 
                         <label class="usheight usHeight">Height:</label>
-                        <input class="feet" placeholder="ft'"></input>
-                        <input class="inches" placeholder='in"'></input>
+                        <input class="feet" id="feet" placeholder="ft'"></input>
+                        <input class="inches"
+                        id="inches" placeholder='in"'></input>
                     </form>
+                    <button class="bmiUsCal" onclick="calUs()">Calculate</button>
+                    <div id="infoUs">
+                        <h1 id="yourUsBMI"></h1>
+                        <h3 id="conversion1Us"></h3>
+                        <h3 id="conversion2Us"></h3>
+                    </div>
                 </div>
                 <div id="metricForm">
+                    <p class="direction1 direction3">Enter Measurements: </p>
                     <form class="bmiForm">
                         <label class="weightLabel metricLabel">Weight in kilograms: </label>
-                        <input class="weight metricInput" placeholder="kg" id="kg"></input>
+                        <input class="weight metricInput" 
+                        id="kg"
+                        placeholder="kg"></input>
                         <br /> 
                         <label class="metricHeight">Height: </label> 
                         <input class="cm" placeholder="cm" id="cm"></input>
                     </form>
                     <button class="bmiMCal" onclick="calMetric()">Calculate</button>
                     <div id="facts">
-
                     </div>
-                    <div id="info">
+                    <div id="infoMetric">
                         <h1 id="yourBMI"></h1>
                         <h3 id="conversion1"></h3>
                         <h3 id="conversion2"></h3>

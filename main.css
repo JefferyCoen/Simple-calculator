@@ -67,22 +67,6 @@ body {
     opacity: 35%;  
 }
 
-.blank {
-    width: 50px; 
-    height: 25px; 
-    margin-bottom: 10px; 
-    opacity: 40%; 
-    background-color: purple; 
-    border: none;
-}
-
-.blank:hover {
-    opacity: 40%; 
-    background-color: purple;
-    border: none;
-    cursor: default;
-}
-
 .topRow {
     height: 25px; 
     border-radius: 5px;
@@ -146,14 +130,18 @@ body {
     opacity: 35%; 
 }
 
+/*//////////////////////////////////////////////*/
+
 /* For BMI Calculator */
+/*for Metric Measurements*/ 
 .bmiCalculator {
-    /* border: solid 1px black; */
-    width: 100%; 
-    height: 500px; 
+    width: 80%; 
+    height: auto; 
     margin: auto;
     text-align: left;
-    padding-left: 110px; 
+    padding-left: 35px; 
+    position: relative; 
+    top: 30px; 
 }
 
 .heading {
@@ -167,9 +155,9 @@ body {
     font-family: 'Times New Roman', Times, serif;
     color: whitesmoke;
     font-size: 14px; 
-    padding-bottom: 10px; 
+    position: relative; 
+    top: 10px; 
 }
-
 
 .bmiLabel {
     font-family: Arial, Helvetica, sans-serif;
@@ -182,7 +170,18 @@ body {
     display: inline-block;
     justify-content: space-evenly;
     padding-right: 40px; 
-    padding-bottom: 10px;  
+    position: relative; 
+    top: 30px;  
+}
+
+.direction2 {
+    position: relative; 
+    top: 50px; 
+}
+
+.usBMIForm {
+    position: relative; 
+    top: 50px; 
 }
 
 .weightLabel {
@@ -200,15 +199,15 @@ body {
     width: 85px; 
     height: 30px; 
     font-size: 20px;  
-    padding-left: 5px;
     outline: none; 
     border-radius: 5px; 
     border-bottom: solid 1px blue;
 }
 
-.usInput {
+.lbs {
     position: relative; 
     top: 11px; 
+    padding-left: 5px; 
 }
 
 .usheight {
@@ -243,20 +242,60 @@ body {
     top: 30px; 
 }
 
+.bmiUsCal {
+    position: relative; 
+    top: 110px; 
+    outline: none; 
+    border-radius: 5px; 
+    border: none; 
+    background-color: lightblue; 
+    color: purple;
+    width: 200px; 
+    height: 25px; 
+    cursor: pointer; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bolder; 
+    font-style: italic;
+}
+
+.bmiUsCal:hover {
+    color: black; 
+    background-color: white; 
+}
+
+.bmiUsCal:active {
+    opacity:35%; 
+}
+
+#infoUs { 
+    border: none;
+    position: relative; 
+    top: 130px; 
+    color: orange;
+    width: 100%; 
+    height: 80px; 
+}
+
 #metricForm {
     visibility: hidden;
     position: relative; 
-    bottom: 19px; 
+    bottom: 91px; 
+}
+
+.direction3 {
+    position: relative; 
+    top: -40px; 
 }
 
 .metricLabel {
     position: relative; 
-    bottom: 30px; 
+    bottom: 29px; 
 }
 
 .metricInput {
     position: relative; 
-    bottom: 30px; 
+    bottom: 29px; 
+    padding-left: 5px; 
 }
 
 .metricHeight {
@@ -281,7 +320,7 @@ body {
 
 .bmiMCal {
     position: relative; 
-    top: 10px; 
+    top: 20px; 
     outline: none; 
     border-radius: 5px; 
     border: none; 
@@ -295,17 +334,18 @@ body {
     font-style: italic; 
 }
 
-#info {
-    position: relative; 
-    top: 20px; 
-}
-
 .bmiMCal:hover {
     color: black; 
     background-color: white; 
 }
 
-#info {
+.bmiMCal:active {
+    opacity:35%; 
+}
+
+#infoMetric {
+    position: relative; 
+    top: 40px; 
     color: orange;
 }
 
