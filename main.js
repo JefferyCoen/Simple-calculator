@@ -74,6 +74,12 @@ function calMetric() {
         document.getElementById('conversion2').innerHTML="We will also need your height."
     }
 
+    if(isNaN(bmiMetric)) {
+        document.getElementById('yourBMI').innerHTML = "We need your measurements to calculate your BMI";
+
+        document.getElementById('conversion1').innerHTML="Sorry, we need your weight.";
+    }
+
     //additional information
     console.log('You entered measurements based on the metric measurement system.')
     console.log('Your BMI: ' + bmiRounded)
@@ -115,7 +121,9 @@ function calUs() {
     if (isNaN(usValue4)) {
         document.getElementById('yourUsBMI').innerHTML = "We need your measurements to calculate your BMI";
 
-        document.getElementById('lbs').innerHTML = "Sorry, we need your weight.";
+        document.getElementById('conversion1Us').innerHTML = "Sorry, we need you weight"
+
+        document.getElementById('conversion2Us').innerHTML = "We also need your height in feet."
     }
 
     //additional information
